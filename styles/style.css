@@ -75,11 +75,13 @@ body {
 
 .featured-images {
     display: flex;
-gap: 20px;
-margin-top: 80px;
+    gap: 20px;
+    margin-top: 80px;
 }
 
-.first-image, .second-image, .third-image {
+.first-image,
+.second-image,
+.third-image {
     width: 33%;
     height: 530px;
     display: flex;
@@ -88,16 +90,94 @@ margin-top: 80px;
     border-radius: 50% 50% 0 0;
 }
 
-#first{
+.first-image img,
+.second-image img,
+.third-image img {
+    height: 80%;
+    width: 80%;
+}
+
+#first {
     background-color: rgba(167, 33, 98, 0.15);
 
 }
 
-#second{
+#second {
     background-color: rgba(5, 151, 160, 0.15);
 }
 
-#third{
+#third {
 
     background-color: rgba(71, 125, 17, 0.15);
+}
+
+.instagram-section-container {
+    width: 90%;
+    height: 1050px;
+    margin: 0 auto;
+    margin-top: 140px;
+
+}
+
+.instagram-text-content {
+    height: 132px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-insta-image {
+    /* width: 342px;
+    height: 396px; */
+    width: 100%;
+    height: 425px;
+}
+
+.first-insta-image img {
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.instagram-image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.super-deals-container{
+    width: 90%;
+    height: 449px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Rectangle9.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deals-content p{
+    margin-bottom: 30px;
+
+}
+
+.deals-content input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#subscribe-btn{
+    width: 100px;
+height: 40px;
+border: none;
+border-radius: 2px;
+background-color: rgb(229, 84, 115);
 }
